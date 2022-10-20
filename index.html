@@ -17,7 +17,7 @@
   <header class="header"> 
     <div class="container flex">
       <nav class="header-nav"> 
-        <a href="./index.html" lang="en" class="header-logo link"><span class="accent">Web</span>Studio</a></li>
+        <a href="./index.html" lang="en" class="header-logo link"><span class="accent">Web</span>Studio</a>
         <ul class="header-item list header-nav">
           <li><a href="./index.html" class="header-item list link header-nav nav-list">Студія</a></li>
           <li><a href="./portfolio.html" class="header-item list link header-nav nav-list">Портфоліо</a></li>
@@ -25,13 +25,25 @@
         </ul>
       </nav>
       <ul class="contact-space">
-        <li><a href="mailto:info@devstudio.com" class="header-mail list link contact-space">info@devstudio.com</a></li>
+        <li>
+          <svg class="icon-mail" width="16px" height="12px">
+            <use href="./images/symbolsecond.svg#icon-envelope"></use>
+          </svg>
+        <li>
+          <a href="mailto:info@devstudio.com" class="header-mail list link contact-space">info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <svg class="icon-tel" width="10px" height="16px">
+            <use href="./images/symbolsecond.svg#icon-vector"></use>
+          </svg>
+        <li>
         <li><a href="tel:+380961111111" class="header-tel list link header-nav">+38 096 111 11 11</a></li>
       </ul>
     </div>
   </header>
   <main>
-    <section class="hero">
+    <section class="hero overlay">
       <div class="container">
         <h1 class="header-content list"> Ефективні рішення для <br> вашого бізнесу</h1>
         <button class="header-btn" type="button">Замовити послугу</button>
@@ -40,31 +52,32 @@
     <section class="category-section">
       <div class="container">
       <ul class="category list">
-        <li class="item">
+        <li class="item icon-delivery">
             <h2 class="item-name">Увага до деталей</h2>
             <p class="items-text">
               Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
             </p>
         </li>
-        <li class="item">
+        <li class="item icon-watch">
             <h2 class="item-name">Пунктуальність</h2>
             <p class="items-text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
             </p>
         </li>
-        <li class="item">
+        <li class="item icon-tv">
             <h2 class="item-name">Планування</h2>
             <p class="items-text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
         </li>
-        <li class="item">
+        <li class="item icon-astronavt">
             <h2 class="item-name">Сучасні технології</h2>
             <p class="items-text">
               Значимість цих проблем настільки очевидна, що реалізація планових завдань.
             </p>
         </li>
       </ul>
+      </div>
     </section>
     <section class="what-we-do">
       <div class="container">
@@ -79,26 +92,128 @@
     <section class="our-team">
       <div class="container">
         <h2 class="images">Наша команда</h2>
-        <ul class="team-frame list" >
+        <ul class="team-frame list">
             <li class="style">
-              <img src="./images/igor.jpg" alt width="270"/>
+              <img src="./images/igor.jpg" alt width="270">
               <div class="team-work">
                 <h3 class="team">Ігор Дем'яненко</h3>
                 <p  class="team-title">Designer</p>
-              </div>
-            </li>
+                  <ul class="social-links list">
+                    <li>
+                      <a href="#" class="link-fill" aria-label="іконка Інстаграм">
+                        <span class="visually-hidden">Iнстаграм</span>
+                          <svg class="link-icon" width="20px" height="20px">
+                            <use href="./images/symbol-defsnew.svg#icon-instagram"></use>
+                          </svg>
+                      </a>
+                    </li>  
+                    <li>
+                      <a href="#" class="link-fill-twitter" aria-label="іконка Твітер">
+                        <span class="visually-hidden">Твітер</span>
+                          <svg class="link-icon" width="20px" height="16.25px">
+                            <use href="./images/symbol-defsnew.svg#icon-twitter"></use>
+                          </svg>
+                      </a>
+                    </li>
+                    <li> 
+                      <a href="#" class="link-fill-facebook" aria-label="іконка Фейсбук">
+                        <span class="visually-hidden">Фейсбук</span>
+                          <svg class="link-icon" width="20px" height="20px">
+                            <use href="./images/symbol-defsnew.svg#icon-facebook"></use>
+                          </svg>
+                      </a>    
+                    </li>  
+                    <li>
+                      <a href="#" class="link-fill-linkedin2" aria-label="іконка Лінкідн">
+                        <span class="visually-hidden">Лінкідн</span>
+                          <svg class="link-icon" width="20px" height="20px">
+                            <use href="./images/symbol-defsnew.svg#icon-linkedin2"></use>
+                          </svg>
+                      </a>
+                    </li>  
+                  </ul>
+              </div>  
+            </li>   
             <li class="style">
               <img src="./images/olga.jpg" alt width="270"/>
               <div class="team-work">
                 <h3  class="team">Ольга Рєпіна</h3>
                 <p  class="team-title">Frontend Developer</p>
-              </div>
+                  <ul class="social-links list">
+                    <li>
+                      <a href="#" class="link-fill" aria-label="іконка Інстаграм">
+                        <span class="visually-hidden">Iнстаграм</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-twitter" aria-label="іконка Твітер">
+                        <span class="visually-hidden">Твітер</span>
+                        <svg class="link-icon" width="20px" height="16.25px">
+                          <use href="./images/symbol-defsnew.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-facebook" aria-label="іконка Фейсбук">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-linkedin2" aria-label="іконка Лінкідн">
+                        <span class="visually-hidden">Лінкідн</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-linkedin2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+              </div>    
             </li>
             <li class="style"> 
-              <img src="./images/mukola.jpg" alt width="270"/>
+              <img src="./images/mukola.jpg" alt width="270">
               <div class="team-work">
                 <h3  class="team">Микола Тарасов</h3>
                 <p  class="team-title">Marketing</p>
+                  <ul class="social-links list">
+                    <li>
+                      <a href="#" class="link-fill" aria-label="іконка Інстаграм">
+                        <span class="visually-hidden">Iнстаграм</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-twitter" aria-label="іконка Твітер">
+                        <span class="visually-hidden">Твітер</span>
+                        <svg class="link-icon" width="20px" height="16.25px">
+                          <use href="./images/symbol-defsnew.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-facebook" aria-label="іконка Фейсбук">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-linkedin2" aria-label="іконка Лінкідн">
+                        <span class="visually-hidden">Лінкідн</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-linkedin2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
               </div>
             </li>
             <li class="style">  
@@ -106,11 +221,93 @@
               <div class="team-work">
                 <h3  class="team">Михайло Єрмаков</h3>
                 <p  class="team-title">UI Designer</p>
-              </div>
-            </li>
-        </ul>
+                  <ul class="social-links list">
+                    <li>
+                      <a href="#" class="link-fill" aria-label="іконка Інстаграм">
+                        <span class="visually-hidden">Iнстаграм</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-twitter" aria-label="іконка Твітер">
+                        <span class="visually-hidden">Твітер</span>
+                        <svg class="link-icon" width="20px" height="16.25px">
+                          <use href="./images/symbol-defsnew.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-facebook" aria-label="іконка Фейсбук">
+                        <span class="visually-hidden">Фейсбук</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="link-fill-linkedin2" aria-label="іконка Лінкідн">
+                        <span class="visually-hidden">Лінкідн</span>
+                        <svg class="link-icon" width="20px" height="20px">
+                          <use href="./images/symbol-defsnew.svg#icon-linkedin2"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+              </li>
+          </ul>
       </div>
     </section>
+    <section>
+      <div class="container">
+        <h2 class="clients-title">Постійні клієнти</h2>
+        <ul class="list-companies list">
+          <li class="companies-icon list">
+            <a href="#" class="link-box" aria-label="Компанія YA&CO">
+            <span class="visually-hidden"></span>
+            <svg class="companies-logo" width="106px" height="60px">
+              <use href="./images/symbolsecond.svg#icon-triangle"></use>
+            </svg>  
+          </li>  
+          <li class="companies-icon list">
+            <a href="#" class="link-box" aria-label="Компанія Два">
+              <span class="visually-hidden"></span>
+              <svg class="companies-logo" width="106px" height="60px">
+                <use href="./images/symbolsecond.svg#icon-book"></use>
+              </svg>
+          </li>
+          <li class="companies-icon list">
+            <a href="#" class="link-box" aria-label="Компанія Три">
+              <span class="visually-hidden"></span>
+              <svg class="companies-logo" width="106px" height="60px">
+                <use href="./images/symbolsecond.svg#icon-circle"></use>
+              </svg>
+          </li>
+          <li class="companies-icon list">
+            <a href="#" class="link-box" aria-label="Компанія Чотири">
+              <span class="visually-hidden"></span>
+              <svg class="companies-logo" width="106px" height="60px">
+                <use href="./images/symbolsecond.svg#icon-oval"></use>
+              </svg>
+          </li>
+          <li class="companies-icon list">
+            <a href="#" class="link-box" aria-label="Компанія П'ять">
+              <span class="visually-hidden"></span>
+              <svg class="companies-logo" width="106px" height="60px">
+                <use href="./images/symbolsecond.svg#icon-tree"></use>
+              </svg>
+          </li>
+          <li class="companies-icon list">
+            <a href="#" class="link-box" aria-label="Компанія Ш">
+              <span class="visually-hidden"></span>
+              <svg class="companies-logo" width="106px" height="60px">
+                <use href="./images/symbolsecond.svg#icon-kvadrat"></use>
+              </svg>
+          </li>
+        </ul>  
+      </div>  
+    </section>  
   </main>
   <footer class="footer">
     <div class="footer-location">
@@ -126,6 +323,44 @@
       </ul>
     </address>
     </div>
+    <div class="container-network">
+      <h2 class="join">Приєднуйтесь</h2>
+      <ul class="footer-links">
+        <li>
+          <a href="#" class="link-fill-footer" aria-label="іконка Інстаграм">
+            <span class="visually-hidden">Iнстаграм</span>
+            <svg class="link-icon" width="20px" height="20px">
+              <use href="./images/symbol-defsnew.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link-fill-twitter-footer" aria-label="іконка Твітер">
+            <span class="visually-hidden">Твітер</span>
+            <svg class="link-icon" width="20px" height="16.25px">
+              <use href="./images/symbol-defsnew.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link-fill-facebook-footer" aria-label="іконка Фейсбук">
+            <span class="visually-hidden">Фейсбук</span>
+            <svg class="link-icon" width="20px" height="20px">
+              <use href="./images/symbol-defsnew.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="link-fill-linkedin2-footer" aria-label="іконка Лінкідн">
+            <span class="visually-hidden">Лінкідн</span>
+            <svg class="link-icon" width="20px" height="20px">
+              <use href="./images/symbol-defsnew.svg#icon-linkedin2"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 </html>
+

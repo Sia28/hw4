@@ -1,0 +1,15 @@
+.box{
+width: 400px;
+height: 400px;
+padding: 20px;
+background-color: tomato;
+margin: 50px auto;
+border-radius: 50%;
+box-shadow: -10px -10px 10px 10px rgb(124, 179, 179), -20px -20px 20px 20px rgb(173, 134, 62),  -30px -30px 30px 30px rgb(141, 124, 179);
+transition: transform 200ms linear, tranform 200ms linear;
+}
+
+.box:active{
+transform:translate (10px, 10px);
+box-shadow: unset;
+}
