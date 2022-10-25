@@ -171,6 +171,7 @@ body{
 .icon-mail,
 .icon-tel{
     margin-right: 10px;
+    fill: #757575;
 }
 .contact-space .item-link:hover,
 .contact-space .item-link:focus{
