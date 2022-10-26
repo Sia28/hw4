@@ -129,6 +129,12 @@ body{
     justify-content: space-between;
 }
 
+.item-link:hover,
+.item-link:focus {
+    color: #2196F3;
+    fill: #2196F3;
+}
+
 .header-logo{
     font-family: 'raleway', sans-serif;
     font-weight: 700;
@@ -145,7 +151,7 @@ body{
     color: var(--accent-color);
 }
 .header-item{
-    gap: 32px;
+    gap: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -170,13 +176,8 @@ body{
 
 .icon-mail,
 .icon-tel{
+    fill: currentColor;
     margin-right: 10px;
-    fill: #757575;
-}
-.contact-space .item-link:hover,
-.contact-space .item-link:focus{
-    color: #2196F3;
-    fill: #2196F3;
 }
 
 .header-content{
@@ -236,6 +237,7 @@ body{
 .link{
     text-decoration: none;
 }
+
 .header-item:hover,
 .header-item:focus {
     color: var(--header-item-hover-color);
@@ -260,8 +262,6 @@ body{
     background-color: #F5F4FA;
     width: 270px;
     height: 120px;
-    left: 215px;
-    top: 774px;
     border-radius: 4px;
     margin-bottom: 30px;
 }
@@ -361,6 +361,7 @@ background-image: url(../images/antenna.svg);
 }
 
 .team-title{
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
@@ -420,7 +421,7 @@ background-image: url(../images/antenna.svg);
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: center;
-    margin-left: 5px;
+    gap: 10px;
 }
 
 .link-icon{
@@ -475,14 +476,11 @@ background-image: url(../images/antenna.svg);
     padding-bottom: 94px;
 }
 
-.companies-icon{
+.link-box{
     width: 170px;
     height: 92px;
     box-sizing: border-box;
     color: #AFB1B8;
-
-    /* width: 100%;
-    height: 100%; */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     display: flex;
@@ -490,27 +488,14 @@ background-image: url(../images/antenna.svg);
     align-items: center;
 }
 
-
-.link-box{
-    /* width: 100%;
-    height: 100%; 
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-
-.companies-icon:hover,
-.companies-icon:focus {
+.link-box:hover,
+.link-box:focus {
 color: #2196F3;
 outline: 1px solid #2196F3;
 }
 
 .companies-logo{
     fill: currentColor;
-    /* width: auto;
-    height: auto; */
 }
 
 
@@ -539,6 +524,7 @@ outline: 1px solid #2196F3;
     color: var(--accept-footer-color);
 }
 .footer-logo{
+    font-family: 'raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -636,6 +622,14 @@ outline: 1px solid #2196F3;
     color: #FFFFFF;
     background-color: #2196F3;
 }
+.link-fill-footer:focus,
+.link-fill-twitter-footer:focus,
+.link-fill-facebook-footer:focus,
+.link-fill-linkedin2-footer:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
 .footer-secondrow{
     display: flex;
     align-items: baseline;
