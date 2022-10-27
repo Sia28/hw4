@@ -91,7 +91,7 @@ body{
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image:  url('../images/imgoverlay.png'), url("../images/hero-bg.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -192,18 +192,7 @@ body{
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;    
-    /* align-items: baseline; */
-    /* flex-direction: row-reverse; */
-    /* justify-content: start; */ 
 }
-
-/* .header-content::before{ 
-    content: '\2665';
-    width: 40px;
-    height: 40px;
-    /* background-image: url(../images/b.jpg); */
-    /* background-size: cover; */
-/* } */
 
 .header-btn {
     font-family:inherit;
@@ -299,6 +288,7 @@ background-image: url(../images/antenna.svg);
     gap: 30px;
     margin-bottom: 10px;
 }
+
 .items-text{
     font-size: 14px;
     line-height: 1.71;
@@ -491,7 +481,7 @@ background-image: url(../images/antenna.svg);
 .link-box:hover,
 .link-box:focus {
 color: #2196F3;
-outline: 1px solid #2196F3;
+border: 1px solid #2196F3;
 }
 
 .companies-logo{
@@ -502,16 +492,10 @@ outline: 1px solid #2196F3;
 /*---------Footer------*/
 .footer{
     background-color: var(--footer-background-color);
-    /* padding-top: 60px; */
+    padding-top: 60px;
     padding-bottom: 60px;
 }
-/* .footer-flex{
-    display: flex;
-    align-items: baseline;
-} */
-.footer-flex-block {
-    margin-top: 48px;
-}
+
 .network {
     margin-left: 69px;
 }
@@ -572,7 +556,6 @@ outline: 1px solid #2196F3;
     margin-right: 0;
 }
 
-
 .place-between{
     margin-bottom: 9px;
 }
@@ -594,7 +577,6 @@ outline: 1px solid #2196F3;
     gap: 10px;
     margin-top: 21px;
 }
-
 
 .link-fill-footer,
 .link-fill-twitter-footer,
@@ -633,11 +615,9 @@ outline: 1px solid #2196F3;
 .footer-secondrow{
     display: flex;
     align-items: baseline;
-    margin-bottom: 5px;
 }
 
 /*----------Portfolio-----------*/
-
 
 .card-set-section{
     padding-top: 94px;
@@ -662,6 +642,7 @@ outline: 1px solid #2196F3;
     color: var(--portfolio-button-color);
     background-color: var(--portfolio-button-background-color);
 }
+
 .portfolio-button:hover,
 .portfolio-button:focus {
     color:var(--portfolio-button-hover-color);
@@ -719,4 +700,3 @@ outline: 1px solid #2196F3;
 .shadow:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
